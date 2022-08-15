@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker -t serg0812/docker-react-upd build -f Dockerfile.dev .
+
+script:
+  - - docker run -e CI=true serg0812/docker-react-upd npm run test
