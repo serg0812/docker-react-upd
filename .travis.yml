@@ -6,7 +6,7 @@ before_install:
   - docker build -t serg0812/docker-react-upd -f Dockerfile.dev .
 
 script:
-  - - docker run -e CI=true serg0812/docker-react-upd npm run test
+  - docker run -e CI=true serg0812/docker-react-upd npm run test
 
 deploy:
   porvider: elasticbeanstalk
