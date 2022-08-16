@@ -7,3 +7,19 @@ before_install:
 
 script:
   - - docker run -e CI=true serg0812/docker-react-upd npm run test
+
+deploy:
+  porvider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker-react-upd"
+  environment: "Dockerreactupd-env"
+  bucket_name: "elasticbeanstalk-us-east-1-798140551122"
+  path: "docker-react-upd"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"
+
+
+
+Dockerreactupd-env.eba-hpvjgtdj.us-east-1.elasticbeanstalk.com
