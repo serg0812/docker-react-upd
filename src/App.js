@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Не !!Редактируй <code>src/App.js</code>, сохраняй, оно будет reboot.
+          Еще раз поменяем <code>src/App.js</code>, сохраняй, оно будет reboot.
         </p>
         <a
           className="App-link"
